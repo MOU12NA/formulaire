@@ -3,17 +3,18 @@
 <head>
 
        <link rel = "stylesheet" href ="form/formu2.css"/>
+	   <script src="form.js"> </script>
 
 </head>
 <body>
+<main>
 <fieldset>
 <legend>Information personnelles</legend>
-<label for="nom">Nom de famille</label>
-<input id="nom"  type="text" ><br>
-      <label for="text">Prenom</label>
-	  <input id="telephone" type="tel"><br>
-<label for="email">Adresse mail</label>
-	 <input id="email" type="email"><br>
+<table>
+<tr><td><label for="nom">Nom de famille</label></td><td><input id="nom"  type="text" ></td></tr><br>
+     <tr><td> <label for="text">Prenom</label></td><td><input id="telephone" type="tel"></td></tr><br><br>
+<tr><td><label for="email">Adresse mail</label></td><td><input id="email" type="email"></td></tr><br><br>
+</table>
 	 <form action="">
   <input type="radio" name="sexe"/> Homme
    <input type="radio" name="sexe"/> Femme
@@ -44,7 +45,16 @@
   </fieldset>
   <fieldset>
   <legend>validation</legend>
+  <p>
+    Entrez votre mot de passe : <br>
+    <input type="password" name="motdepasse" size="20" maxlength="20"/>
+  </p>
   
+  <p>
+    <input type="button" value="envoyer"/>
+  </p>
+  </main>
+
 
 
 
